@@ -107,11 +107,15 @@ $(function () {
       scrub: 1,
       markers: true,
       start: "10% 30%",
-      end: "bottom+=2500 top",
+      end: "bottom+=500 top",
       toggleActions: "play reset none none",
     },
   });
-  tlphrase.from(".phrase > figure", { x: "random(-80, 80)", autoAlpha: 0, stagger: 0.3 });
+  tlphrase.from(".phrase > figure, .phrase > dl", {
+    x: "random(-80, 80)",
+    opacity: 0, // 처음에는 투명하도록 설정
+    stagger: 0.3,
+  });
 
   const horizontal = document.querySelector(".about-me");
   const hCon = gsap.utils.toArray(".about-me > div");

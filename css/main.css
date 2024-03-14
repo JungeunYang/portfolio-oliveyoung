@@ -643,6 +643,7 @@ h2 {
   overflow: auto;
   padding: 5rem 0;
   overflow-y: hidden;
+  overflow-x: hidden;
   margin-bottom: 5rem;
 }
 
