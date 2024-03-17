@@ -207,7 +207,7 @@ $(function () {
     scrollTrigger: {
       containerAnimation: tl,
       trigger: ".sec3-3-con dl",
-      start: "left 30%",
+      start: "left 55%",
       // markers: true,
       duration: 1,
     },
@@ -335,6 +335,7 @@ $(function () {
       // markers: true,
     },
   });
+
   var swiper = new Swiper(".mySwiper", {
     lazy: true,
     loop: true,

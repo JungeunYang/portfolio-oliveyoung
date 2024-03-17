@@ -1175,10 +1175,61 @@ h2 {
   border-radius: 2.5rem;
   padding: 1rem 3rem;
 }
+
 .box-btn a:hover {
   background: var(--main-color);
   color: #fff;
 }
+
+.box-btn.ggoblin_studio {
+  background: none;
+  width: auto;
+  height: auto;
+  border: 1px solid var(--main-color);
+  border-radius: 2.5rem;
+  padding: 0.8rem 2rem;
+  font-size: 2rem;
+  position: absolute;
+  top: 7%;
+  right: 14%;
+  z-index: 3;
+}
+.box-btn.ggoblin_studio:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+.box-con.ggoblin_studio .swiper-horizontal > .swiper-pagination-bullets,
+.box-con.ggoblin_studio .swiper-pagination-bullets.swiper-pagination-horizontal,
+.box-con.ggoblin_studio .swiper-pagination-custom,
+.box-con.ggoblin_studio .swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, 0px);
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: 100%;
+}
+
+/* .box-link.ggoblin_studio {
+  z-index: 10;
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+.swiper-wrapper.ggoblin_studio .swiper-slide img {
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  max-height: 80%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  object-fit: cover;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -1211,7 +1262,9 @@ h2 {
   position: absolute;
   left: 50%;
   top: 50%;
+  object-fit: cover;
 }
+
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
@@ -1221,61 +1274,58 @@ h2 {
   left: 0;
   width: 100%;
 }
-/* section5: work-box */
-/* .box-aladin {
-  width: 70rem;
-  height: 100%;
-  position: absolute;
-  right: 15.8rem;
-  top: 0;
-  background: #fff;
-  border: 1px solid var(--main-color);
-  text-align: center;
-  align-items: center;
-  color: var(--main-color);
-  padding: 3rem 5rem 3rem 5rem;
+/* illustration-works */
+.works-list-item-detail.illustration2 {
+  position: relative;
 }
-.box-con {
+.box-con.illustration2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
 }
 
-.box-aladin strong {
-  font-size: 9rem;
-  font-weight: 600;
+.box-text.illustration2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 30%;
+}
+.box-text.illustration2 > figure {
   display: block;
-  margin-top: 2rem;
-}
-.box-aladin figure {
-  margin-top: 4rem;
-}
-.box-aladin figure img {
-  width: 41rem;
-  height: 45rem;
   margin: 0 auto;
+  width: 31.4rem;
+  height: 12.8rem;
 }
-.box-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-top: 7rem;
+.box-text.illustration2 > figure img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
-.box-bottom dl {
-  text-align: left;
+.box-text.illustration2 p {
+  font-size: 2.3rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  color: #000;
 }
-.box-bottom dl dt {
-  font-size: 2rem;
-  font-weight: 600;
+
+.box-con.illustration2 > figure {
+  width: 100%;
+  height: 100%;
+  margin-top: -10rem;
 }
-.box-bottom dl dd {
-  font-size: 3.2rem;
-  font-weight: 600;
-  margin-top: -1rem;
+
+.box-con.illustration2 > figure img {
+  width: 100%;
+  height: 100%;
 }
-.box-bottom p {
-  font-size: 2.2rem;
-  margin-top: 0.5rem;
+
+.box-con.illustration3 > figure {
+  width: 100%;
+  height: 100%;
 }
-.box-bottom a {
-  background: url(../img/works-link-arrow.svg) no-repeat 50% / contain;
-  width: 6rem;
-  height: 6rem;
-} */
+.box-con.illustration3 > figure img {
+  width: 100%;
+  height: 100%;
+}
