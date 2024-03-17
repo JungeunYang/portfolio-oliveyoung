@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jungeun Yang</title>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -14,6 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+
     <!-- script:src -->
     <script src="./js/script.js"></script>
     <script src="./js/matter.js"></script>
@@ -237,12 +242,9 @@
                 <dd>창문을 어디에 둘까?</dd>
               </dl>
               <p>
-                전공 수업에서 새로운 공간의 도면을 그리던 중 창문을 배치해야하는 상황이 있었습니다. 저는 창문 하나를
-                배치하더라도 이 공간이 어디에 위치할 것이고 이 공간을 기준으로 해가 어디에서 떠서 어디에서 지는 지를
-                기준으로 하는 등의 이유를 찾아야 한다고 생각했지만 팀 작업이었고 요소 하나하나 배치의 이유를 찾기엔
-                주어진 시간이 부족해서 아쉬웠던 경험이 있습니다. 이 때부터 저는 ‘심미성’뿐만 아니라 이를 객관적으로
-                뒷받침 해줄 수 있는 이유를 가진 디자인을 하고 싶다고 생각했고, 이렇게 이유를 파고드는 제 성향이 문제와
-                문제해결을 위한 디자인을 하는 UX/UI분야와 잘 맞을 것 같다고 생각합니다.
+                공간디자인을 전공한 저는 창문 하나를 배치하더라도 창문이 배치하는 이유를 찾아야 직성이 풀리는
+                사람이었습니다.<br />
+                ‘심미성’과 더불어 '이유'가 있는 디자인을 하고 싶습니다.
               </p>
             </div>
             <figure>
@@ -312,8 +314,8 @@
         <div class="works-con">
           <ul class="works-list">
             <li><a href="#!">UX/UI WORKS.</a></li>
+            <li><a href="#!">CHARACTER BRANDING.</a></li>
             <li><a href="#!">ILLUSTRATION WORKS.</a></li>
-            <li><a href="#!">GRAPHIC WORKS.</a></li>
           </ul>
 
           <div class="works-list-infos">
@@ -379,11 +381,6 @@
                           <a href="rimowa.html" target="_blank">PROCESS</a>
                           <a href="https://jungeunyang.github.io/Rimowa/" target="_blank">LINK</a>
                         </div>
-                        <!-- <a
-													href="rimowa.html"
-													target="_blank"
-													class="box-link"
-												></a> -->
                       </div>
                     </div>
                   </div>
@@ -425,8 +422,8 @@
             </div>
             <div class="works-list-info">
               <dl>
-                <dt>캐릭터 사업 및 일러스트 외주 작업</dt>
-                <dd>ILLUSTRATION WORKS.</dd>
+                <dt>2019. 05. ~ 2023. 08.<br />캐릭터 브랜딩 및 굿즈 제작 사업</dt>
+                <dd>CHARACTER BRANDING BUSINESS.</dd>
               </dl>
               <ul class="works-list-item">
                 <li><a href="#!" class="ggoblin_studio">GGOBLIN_STUDIO</a></li>
@@ -435,14 +432,47 @@
             </div>
             <div class="works-list-info">
               <dl>
-                <dt>그래픽 작업</dt>
-                <dd>GRAPHIC WORKS.</dd>
+                <dt>일러스트 외주 작업</dt>
+                <dd>ILLUSTRATION WORKS.</dd>
               </dl>
               <ul class="works-list-item">
-                <li><a href="#" class="graphic1">GRAPHIC1</a></li>
-                <li><a href="#" class="graphic2">GRAPHIC2</a></li>
-                <li><a href="#" class="graphic3">GRAPHIC3</a></li>
-                <li><a href="#" class="graphic4">GRAPHIC4</a></li>
+                <li>
+                  <a href="#!" class="graphic1">PLAYMAT</a>
+                  <div class="works-list-item-detail">
+                    <div class="box-con">
+                      <!-- Swiper -->
+                      <div
+                        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                        class="swiper mySwiper"
+                      >
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="./img/works-playmat01.jpg" loading="lazy" />
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/works-playmat02.jpg" loading="lazy" />
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/works-playmat03.jpg" loading="lazy" />
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/works-playmat04.jpg" loading="lazy" />
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="#!" class="graphic2">GRAPHIC2</a></li>
+                <li><a href="#!" class="graphic3">GRAPHIC3</a></li>
+                <li><a href="#!" class="graphic4">GRAPHIC4</a></li>
               </ul>
             </div>
           </div>

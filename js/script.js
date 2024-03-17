@@ -113,7 +113,7 @@ $(function () {
   });
   tlphrase.from(".phrase > figure, .phrase p", {
     x: "random(-80, 80)",
-    opacity: 0, // 처음에는 투명하도록 설정
+    opacity: 0,
     stagger: 0.3,
   });
 
@@ -148,7 +148,7 @@ $(function () {
       containerAnimation: tl,
       trigger: ".sec3-1-con dl",
       start: "left 30%",
-      markers: true,
+      // markers: true,
       duration: 1,
     },
   });
@@ -199,6 +199,36 @@ $(function () {
     {
       autoAlpha: 0,
       y: 100,
+    },
+    "-=.3"
+  );
+
+  const tlsub3 = gsap.timeline({
+    scrollTrigger: {
+      containerAnimation: tl,
+      trigger: ".sec3-3-con dl",
+      start: "left 30%",
+      // markers: true,
+      duration: 1,
+    },
+  });
+
+  tlsub3.from(".sec3-3-con dl", {
+    autoAlpha: 0,
+    y: 100,
+  });
+  tlsub3.from(
+    ".sec3-3-con p",
+    {
+      autoAlpha: 0,
+      y: 100,
+    },
+    "-=.3"
+  );
+  tlsub3.from(
+    ".sec3-3 figure",
+    {
+      clipPath: "inset(0 100% 0 0)",
     },
     "-=.3"
   );
@@ -303,6 +333,17 @@ $(function () {
       trigger: ".profile-info",
       start: "center 100%",
       // markers: true,
+    },
+  });
+  var swiper = new Swiper(".mySwiper", {
+    lazy: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
 });
