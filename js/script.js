@@ -340,7 +340,7 @@ $(function () {
     lazy: true,
     loop: true,
     autoplay: {
-      delay: 4000,
+      delay: 4500,
       pauseOnMouseEnter: true,
     },
     speed: 600,
