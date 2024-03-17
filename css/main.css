@@ -634,43 +634,55 @@ h2 {
 }
 
 /* section: phrase */
-
+.phrase-scroll {
+  padding-right: 5rem;
+}
 .phrase {
-  width: 100%;
-  height: 90vh;
-  position: relative;
-  border: 1px solid blue;
+  max-height: 1200px !important;
+  /* background: greenyellow; */
   overflow: auto;
-  padding: 5rem 0;
   overflow-y: hidden;
   overflow-x: hidden;
-  margin-bottom: 5rem;
 }
 
 .phrase figure {
-  width: 100%;
-  height: 20%;
-  border: 1px solid #000;
-  object-fit: cover;
+  height: 4.8%;
   text-align: right;
-  margin-top: 1rem;
+  margin-top: 6.3rem;
 }
-.phrase figure:last-of-type {
-  margin-bottom: 10rem;
-}
-.phrase figure:nth-of-type(3) img,
-.phrase figure:nth-of-type(5) img {
-  max-height: 90%;
-}
-.phrase figure:first-of-type img {
-  border: 1px solid red;
-  aspect-ratio: 2.4 / 1;
+.phrase figure:first-of-type {
+  margin-top: 20rem;
 }
 .phrase figure img {
-  max-height: 100%;
   width: auto;
+  height: 140%;
+  object-fit: cover;
 }
-
+.phrase-con {
+  width: 100%;
+  margin-top: 12rem;
+  /* background: #ff5; */
+  position: relative;
+}
+.phrase-con::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  width: 19rem;
+  height: 0.8rem;
+  background: var(--main-color);
+}
+.phrase-con p {
+  width: 30%;
+  color: var(--main-color);
+  font-size: 2.2rem;
+  line-height: 1.6;
+  margin: 4rem 0rem 0rem auto;
+  text-align: right;
+  padding: 4rem 1rem;
+}
 /* section3: About ME*/
 
 .section3 {
@@ -678,6 +690,7 @@ h2 {
   position: relative;
   /* background: yellow; */
   height: 100vh;
+  border-top: 2px solid var(--main-color);
 }
 .section3::before {
   content: "";
@@ -759,6 +772,18 @@ h2 {
   border-bottom: 1px solid var(--main-color);
   padding: 2rem 0 2rem 0;
 } */
+.sec3-3 {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 10rem;
+  justify-content: center;
+}
+.sec3-3-con {
+  color: var(--main-color);
+  text-align: left;
+  width: 30%;
+  padding: 0 7rem 0 0rem;
+}
 
 /* section4: Work Experience */
 .section4 {
@@ -842,8 +867,8 @@ h2 {
   justify-content: center;
 }
 .sec4-1-con figure img {
-  width: 30rem;
-  height: 60rem;
+  width: 52rem;
+  height: 69.1rem;
 }
 .sec4-1-text {
   text-align: left;

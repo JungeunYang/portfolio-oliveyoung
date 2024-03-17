@@ -105,13 +105,13 @@ $(function () {
       trigger: ".phrase",
       pin: true,
       scrub: 1,
-      markers: true,
-      start: "10% 30%",
-      end: "bottom+=500 top",
+      /* markers: true, */
+      start: "10% 10%",
+      end: "bottom+=3500 top",
       toggleActions: "play reset none none",
     },
   });
-  tlphrase.from(".phrase > figure, .phrase > dl", {
+  tlphrase.from(".phrase > figure, .phrase p", {
     x: "random(-80, 80)",
     opacity: 0, // 처음에는 투명하도록 설정
     stagger: 0.3,
@@ -148,7 +148,8 @@ $(function () {
       containerAnimation: tl,
       trigger: ".sec3-1-con dl",
       start: "left 30%",
-      // markers: true,
+      markers: true,
+      duration: 1,
     },
   });
 
