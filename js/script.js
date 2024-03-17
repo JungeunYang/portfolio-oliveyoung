@@ -337,6 +337,12 @@ $(function () {
   });
   var swiper = new Swiper(".mySwiper", {
     lazy: true,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      pauseOnMouseEnter: true,
+    },
+    speed: 600,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
