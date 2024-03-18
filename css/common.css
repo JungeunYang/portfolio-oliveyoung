@@ -1,8 +1,8 @@
 @charset 'utf-8';
 
 /* 웹폰트 정의 */
-@import url('https://db.onlinewebfonts.com/c/d7b2787bf6a6d55a23f6a10f7a73b8d0?family=ITC+New+Baskerville+Std+SmBdIt');
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url("https://db.onlinewebfonts.com/c/d7b2787bf6a6d55a23f6a10f7a73b8d0?family=ITC+New+Baskerville+Std+SmBdIt");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 
 :root {
   font-size: 100%; /* fz100p = 16px */
@@ -90,7 +90,7 @@ button {
 }
 
 body {
-  font: 1rem/1.5 'Pretendard', sans-serif;
+  font: 1rem/1.5 "Pretendard", sans-serif;
   color: var(--text-color);
   overflow-x: hidden;
   word-break: keep-all;
@@ -299,7 +299,7 @@ nav .gnb li {
 }
 
 nav .gnb li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 7px;
   left: 50%;
@@ -326,4 +326,53 @@ nav .gnb li a:hover {
 
 nav .gnb.white li a:hover {
   color: var(--main-color);
+}
+#btn-scroll {
+  display: inline-block;
+  background-color: var(--main-color);
+  mix-blend-mode: screen;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+#btn-scroll::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3em;
+  line-height: 55px;
+  color: #fff;
+}
+#btn-scroll:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+#btn-scroll:active {
+  background-color: #000;
+}
+#btn-scroll.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#footer {
+  background: var(--main-color);
+  padding: 2rem;
+}
+#footer strong {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  display: block;
+  text-align: center;
 }
