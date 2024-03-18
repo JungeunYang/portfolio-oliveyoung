@@ -156,11 +156,21 @@ body {
   font-weight: 600;
 }
 
+.dim {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.63);
+}
+
 #header .popup-menu {
   position: fixed;
   right: -100%;
   top: 0;
-  width: 100%;
+  width: 35%;
   height: 100%;
   display: none;
   z-index: 2;
@@ -173,7 +183,6 @@ body {
 }
 
 #header .popup-menu .bg {
-  background-color: #000;
   position: absolute;
   top: 0;
   left: 0;
@@ -187,43 +196,48 @@ body {
   position: absolute;
   top: 0px;
   left: 0;
-  border: 5px solid #000;
-}
-#header .popup-menu .top-menu .popup-image {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#header .popup-menu .top-menu .popup-image figure img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 #header .popup-menu .top-menu .popup-main-menu {
-  width: 50%;
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
-  left: 50%;
-  background: var(--main-color); /* border: 2px solid red; */
+  right: 0;
+  background: var(--main-color);
+  padding: 6rem 12rem;
 }
 #header .popup-menu .top-menu .popup-main-menu li {
-  /* padding: 8px 12px; */
-  font-size: 5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  height: 25%;
-  border: 2px solid #000;
+  /* border: 1px solid yellow; */
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  padding: 2rem 0;
 }
 #header .popup-menu .top-menu .popup-main-menu li a {
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  /* background: red; */
+  position: relative;
 }
+#header .popup-menu .top-menu .popup-main-menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 0%;
+  height: 0.5rem;
+  background: #fff;
+  transition: 0.4s;
+}
+
+#header .popup-menu .top-menu .popup-main-menu li a:hover::after {
+  width: 100%;
+}
+
 #header .navbar-button {
   position: absolute;
   right: 18px;

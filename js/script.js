@@ -30,17 +30,25 @@ $(function () {
   const $toggleBtn = $("#toggle-button");
   const $menu = $(".popup-menu");
   const $popupMenu = $(".popup-main-menu > li");
+  const $dim = $(".dim");
 
   // let isActive = false;
 
   // 반응형 웹 햄버거 메뉴 클릭 시 메뉴 펼침, 숨김 처리
   $toggleBtn.on("click", () => {
     $menu.toggleClass("active");
+    $dim.fadeToggle();
   });
 
   $popupMenu.on("click", () => {
     $menu.removeClass("active");
     $toggleBtn.prop("checked", false);
+    $dim.fadeOut();
+  });
+  $dim.on("click", () => {
+    $menu.removeClass("active");
+    $toggleBtn.prop("checked", false);
+    $dim.fadeOut();
   });
 
   $window.on("scroll", function () {
