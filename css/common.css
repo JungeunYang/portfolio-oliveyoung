@@ -366,6 +366,7 @@ nav .gnb.white li a:hover {
   font-size: 3em;
   line-height: 55px;
   color: #fff;
+  z-index: 1000;
 }
 #btn-scroll:hover {
   cursor: pointer;
