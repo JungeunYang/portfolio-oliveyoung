@@ -1285,18 +1285,19 @@ h2 {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
+  padding: 9rem 3rem;
 }
 
 .box-text.illustration2 {
   width: 100%;
   text-align: center;
-  margin-top: 30%;
+  align-items: center;
 }
 .box-text.illustration2 > figure {
   display: block;
   margin: 0 auto;
-  width: 24.8rem;
-  height: 10.1rem;
+  aspect-ratio: 2.455/1;
+  height: 8rem;
 }
 .box-text.illustration2 > figure img {
   object-fit: contain;
@@ -1309,16 +1310,38 @@ h2 {
   margin-top: 1.8rem;
   color: #000;
 }
-
-.box-con.illustration2 > figure {
-  width: 100%;
-  height: 100%;
-  margin-top: -4rem;
+.box-character.illustration2 > figure {
+  width: 70%;
+  height: auto;
+  margin: 7rem auto 0rem auto;
 }
 
-.box-con.illustration2 > figure img {
+.box-character.illustration2 > figure img {
   width: 100%;
   height: 100%;
+}
+
+.box-pics.illustration2 {
+  display: flex;
+}
+.box-pics.illustration2 figure {
+  height: 50rem;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+.box-pics.illustration2 figure:first-of-type img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1.553/1;
+}
+.box-pics.illustration2 figure:nth-of-type(2) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 0.829/1;
 }
 
 .box-con.illustration3 > figure {
